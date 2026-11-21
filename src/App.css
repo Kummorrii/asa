@@ -1,0 +1,14 @@
+.app { width: 100vw; height: 100vh; position: relative; overflow: hidden; font-family: system-ui, sans-serif; }
+.app .leaflet-container { width: 100%; height: 100%; z-index: 0; }
+
+.slot { position: absolute; pointer-events: none; z-index: 1000; }
+.slot > .panel { pointer-events: auto; }
+
+.slot-top-left { top: 12px; left: 12px; max-width: 340px; }
+.slot-top-center { top: 12px; left: 50%; transform: translateX(-50%); max-width: 420px; }
+.slot-top-right { top: 12px; right: 12px; max-width: 300px; }
+.slot-bottom-left { bottom: 12px; left: 12px; max-width: 340px; }
+.slot-bottom-center { bottom: 12px; left: 50%; transform: translateX(-50%); max-width: 480px; }
+.slot-bottom-right { bottom: 12px; right: 12px; max-width: 260px; }
+
+.error-chip { background: var(--danger, #e04); color: white; padding: 6px 10px; border-radius: var(--radius, 8px); font-size: 12px; }

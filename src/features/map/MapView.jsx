@@ -5,9 +5,10 @@ import { bus } from '../../lib/bus'
 import { EVENTS } from '../../lib/events'
 import { CONFIG } from '../../config'
 import { reverseGeocode } from './geocode'
+import L from 'leaflet'
 import './map.css'
 
-const greenIcon = new (require('leaflet').Icon)({
+const greenIcon = new L.Icon({
   iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
   iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
@@ -15,7 +16,7 @@ const greenIcon = new (require('leaflet').Icon)({
 })
 greenIcon.options.className = 'map-pin-origin'
 
-const redIcon = new (require('leaflet').Icon)({
+const redIcon = new L.Icon({
   iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
   iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',

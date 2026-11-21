@@ -1,0 +1,46 @@
+export const PRESETS = [
+  { name: 'CIT University', lat: 10.3047, lng: 123.9012 },
+  { name: 'Fuente Osmeña', lat: 10.3246, lng: 123.8975 },
+  { name: 'Colon Street', lat: 10.2978, lng: 123.9021 },
+  { name: 'Ayala Center Cebu', lat: 10.3241, lng: 123.9092 },
+  { name: 'SM Seaside City Cebu', lat: 10.2875, lng: 123.8925 },
+  { name: 'IT Park', lat: 10.3215, lng: 123.9075 },
+  { name: "Magellan's Cross", lat: 10.2935, lng: 123.9022 },
+  { name: 'Carbon Market', lat: 10.2992, lng: 123.8975 },
+  { name: 'Fort San Pedro', lat: 10.2918, lng: 123.9062 },
+  { name: 'Basilica del Santo Niño', lat: 10.2958, lng: 123.9033 },
+  { name: 'Cebu Provincial Capitol', lat: 10.3189, lng: 123.8945 },
+  { name: 'Mactan-Cebu International Airport', lat: 10.3075, lng: 123.9772 },
+  { name: 'Cebu Doctors\' University', lat: 10.3156, lng: 123.8998 },
+  { name: 'University of San Carlos', lat: 10.3042, lng: 123.9001 },
+  { name: 'South Road Properties', lat: 10.2789, lng: 123.8987 },
+  { name: 'Banilad Town Centre', lat: 10.3358, lng: 123.9156 },
+  { name: 'Cebu Business Park', lat: 10.3235, lng: 123.9082 },
+  { name: 'Mandaue City Hall', lat: 10.3333, lng: 123.9389 },
+  { name: 'Lapu-Lapu City Hall', lat: 10.3102, lng: 123.9487 },
+  { name: 'Talisay City Hall', lat: 10.2547, lng: 123.8394 },
+]
+
+export const DEMO_TRIPS = [
+  {
+    id: 'demo-1',
+    name: 'Airport to Downtown',
+    origin: { name: 'Mactan-Cebu International Airport', lat: 10.3075, lng: 123.9772 },
+    destination: { name: 'Fuente Osmeña', lat: 10.3246, lng: 123.8975 },
+    mode: 'drive',
+  },
+  {
+    id: 'demo-2',
+    name: 'South to North',
+    origin: { name: 'SM Seaside City Cebu', lat: 10.2875, lng: 123.8925 },
+    destination: { name: 'Mandaue City Hall', lat: 10.3333, lng: 123.9389 },
+    mode: 'drive',
+  },
+  {
+    id: 'demo-3',
+    name: 'Heritage Walk',
+    origin: { name: "Magellan's Cross", lat: 10.2935, lng: 123.9022 },
+    destination: { name: 'Fort San Pedro', lat: 10.2918, lng: 123.9062 },
+    mode: 'walk',
+  },
+]
